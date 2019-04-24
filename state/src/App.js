@@ -6,7 +6,7 @@ class LikeButton extends Component {
         super();
         this.state = {
             isLiked:true,
-            // count:0
+           // count:0
         }
     }
     handleClick(){
@@ -49,6 +49,7 @@ class LikeButton extends Component {
     }
     render() {
         const {count} = this.state;
+        // console.log(count)
         return (
             <div>
                 <button onClick={this.handleClick.bind(this)}>
